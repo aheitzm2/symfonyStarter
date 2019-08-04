@@ -15,7 +15,9 @@
 
 <script>
     export default {
-        name: "Hello"
+        name: "Hello",
+        methods:{
+        }
     }
 </script>
 
