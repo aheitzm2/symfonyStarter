@@ -1,5 +1,5 @@
 <template>
-    <div id="vueApp">
+    <div>
         <div id="container">
             <div id="welcome">
                 <h1>Hello Page</h1>
@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "homepage"
+        name: "Hello"
     }
 </script>
 

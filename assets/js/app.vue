@@ -1,27 +1,15 @@
-// ./assets/js/app.vue
 <template>
     <div class="container">
-        <nav class="navbar is-transparent">
-            <div class="navbar-brand">
-                <h1>Getting started with Symfony + VueJS</h1>
-            </div>
-            <div id="vue-menu" class="navbar-menu">
-                <div class="navbar-start">
-                    <router-link tag='div' to="/" class="navbar-item">Home</router-link>
-                    <router-link tag='div' to="hello" class="navbar-item">Hello</router-link>
-                    <router-link tag='div' to="notfound" class="navbar-item">Not Found URL</router-link>
-                </div>
-            </div>
-        </nav>
-        <div>
-            <router-view></router-view>
-        </div>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-        name: "app"
+        name: "app",
+        created() {
+            console.log('Je suis chargé');
+        }
     }
 </script>
 

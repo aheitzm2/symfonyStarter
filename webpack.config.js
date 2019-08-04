@@ -10,9 +10,10 @@ Encore
     .cleanupOutputBeforeBuild()                     // empties the outputPath dir before each build
     .enableSourceMaps(!Encore.isProduction())       // enables source maps for Dev
     // .enableVersioning(Encore.isProduction())     // uncomment to create hashed filenames (e.g. app.abc123.css)
+    .enableSingleRuntimeChunk()
 
     // define the assets of the project
-    .addEntry('js/app', './assets/js/index.js')
+    .addEntry('app', './assets/js/app.js')
     // .addStyleEntry('css/style', './assets/css/custom.less')
     .enableLessLoader()
     .addLoader({
